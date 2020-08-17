@@ -411,6 +411,80 @@ h1{
 .trial-form button:hover{
     background-color: #475bf1;
 }
+.yoga-future{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding: 110px 0px;
+}
+.yoga-future h2{
+    font-family: "OpenSansBold";
+    color: #5b6ceb;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.yoga-future .title{
+    font-family: "FreestyleScript"; 
+    color: #777;
+    font-size: 40px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.yoga-pragrams{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 77px 0px 0px 0px;
+}
+.yoga-pragrams .item{
+    width: 570px;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+    margin: 13px 15px;
+}
+.yoga-pragrams .item .left-item{
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+.yoga-pragrams .item .left-item img{
+    position: relative;
+    top: 2px;
+    left: -8px;
+}
+.yoga-pragrams .item .right-item{
+    display: inline-block;
+    width: 50%;
+    float: right;
+}
+.yoga-pragrams .item .right-item .title-program{
+    font-family: "OpenSansBold";
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #777;
+    margin: 50px 0px 35px 0px;
+    text-align: left;
+    padding: 0px 30px 0px 30px;
+}
+.yoga-pragrams .item .right-item .description{
+    font-family: 'OpenSansRegular';
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    padding: 0px 30px 0px 30px;
+}
+.yoga-pragrams .item .right-item .trainer{
+    margin: 20px 0px 0px 0px;
+    font-size: 14px;
+    text-align: left;
+    color: #999;
+    padding: 0px 30px 0px 30px;
+}
 
 
 @media only screen and (max-width: 1400px){
