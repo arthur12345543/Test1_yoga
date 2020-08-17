@@ -1,4 +1,13 @@
 @font-face{
+    font-family: "FreestyleScript"; 
+    src: url("./../fonts/FreestyleScript/WEB/FreestyleScript.eot"); 
+    src: url("./../fonts/FreestyleScript/WEB/FreestyleScript?#iefix") format("embedded-opentype"),
+    url("./../fonts/FreestyleScript/WEB/FreestyleScript.woff") format("woff"), 
+    url("./../fonts/FreestyleScript/TTF/FreestyleScript.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face{
     font-family: "OpenSansBold"; 
     src: url("./../fonts/OpenSans/WEB/OpenSans-Bold.eot"); 
     src: url("./../fonts/OpenSans/WEB/OpenSans-Bold?#iefix") format("embedded-opentype"),
@@ -119,6 +128,10 @@ button:focus, input:focus, select:focus, textarea:focus{
 button:hover{
     cursor: pointer;	
 }
+select{
+    -webkit-appearance: none;
+    appearance: auto;
+}
 a{
     color: #606975;
     text-decoration: none;
@@ -218,19 +231,20 @@ div{
     background: #353f4e;
 }
 ::-webkit-input-placeholder{
-    color: #606975 !important;
+    color: #888 !important;
     text-shadow: none !important;
 }
 :-moz-placeholder{
-    color: #606975 !important;
+    color: #888 !important;
     text-shadow: none !important;
 }
 ::-moz-placeholder{
-    color: #606975 !important;
+    color: #888 !important;
     text-shadow: none !important;
 }
 :-ms-input-placeholder{
-    color: #606975 !important;
+    font-family: 'OpenSansRegular' !important;
+    color: #888 !important;
     text-shadow: none !important;
 }
 .error{
@@ -276,7 +290,7 @@ div{
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 h1{
-    font-family: "MavenProRegular";
+    font-family: 'OpenSansRegular';
     font-size: 28px;
     color: #526c82;
     text-transform: uppercase;
@@ -297,6 +311,7 @@ h1{
 }
 .nav span a{
     font-family: "OpenSansSemiBold";
+    font-size: 14px;
     color: #555;
 }
 .nav span a:hover{
@@ -311,6 +326,93 @@ h1{
 .nav span a:hover + .nav-inner{
     border-bottom: 1px solid #5363db;
 }
+.trial{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 100px 0px;
+    background: url("./../images/bg-trial-section.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.trial .left-section{
+    float: left;
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+}
+.trial .right-section{
+    float: right;
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+.trial .trial-vibes-wrap{
+    display: block;
+}
+.trial .trial-motivation{
+    font-family: "OpenSansBold";
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 48px;
+}
+.trial .trial-vibes{
+    font-family: "FreestyleScript"; 
+    color: #fff;
+    font-size: 40px;
+    margin: 45px 0px;
+}
+.trial-form{
+    display: block;
+    background-color: #fff;
+    width: 220px;
+    padding: 40px;
+    text-align: left;
+    float: right;
+    margin-right: 90px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.trial-form .title-form{
+    font-family: "OpenSansSemiBold";
+    font-size: 25px;
+    color: #5363db;
+    padding: 0px;
+    margin: 9px 0px;
+}
+.trial-form input, .trial-form select{
+    font-family: 'OpenSansRegular';
+    font-size: 14px;
+    background-color: #f2f2f2;
+    color: #888;
+    border-radius: 8px;
+    width: 210px;
+    padding: 18px 2px 18px 10px;
+    border: none;
+    margin: 9px 0px;
+}
+.trial-form select{
+    width: 222px;
+}
+.trial-form button{
+    font-family: "OpenSansBold";
+    color: #fff;
+    font-size: 16px;
+    background-color: #5b6ceb;
+    border-radius: 8px;
+    box-shadow: 2.121px 2.121px 5px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 18px 60px;
+    margin: 9px 0px;
+    float: right;
+}
+.trial-form button:hover{
+    background-color: #475bf1;
+}
+
+
 @media only screen and (max-width: 1400px){
     
 }
