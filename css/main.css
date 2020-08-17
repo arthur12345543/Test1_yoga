@@ -522,6 +522,62 @@ h1{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+.about{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    padding: 110px 0px;
+}
+.about .left-section{
+    display: inline-block;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.about .left-section .about-wrapper{
+    width: 460px;
+    float: right;
+}
+.about .left-section .title{
+    font-family: "OpenSansBold";
+    font-size: 30px;
+    color: #5b6ceb;
+    text-transform: uppercase;
+    text-align: left;
+}
+.about .left-section .description{
+    font-family: 'OpenSansRegular';
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+.about .right-section{
+    display: inline-block;
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+.about .right-section .carousel{
+    width: 460px;
+    display: inline-block;
+}
+.about .right-section .carousel img{
+    border-radius: 8px;
+    width: 100%;
+}
+.about .right-section .slick-prev{
+    left: -18px;
+    z-index: 40;
+}
+.about .right-section .slick-next{
+    right: -6px;
+    z-index: 40;
+}
+.slick-prev:before, .slick-next:before{
+    color: #5b6ceb !important;
+    opacity: 1 !important;
+    font-size: 34px !important;
+}
 
 @media only screen and (max-width: 1400px){
     

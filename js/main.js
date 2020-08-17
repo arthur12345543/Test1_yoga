@@ -5,4 +5,9 @@ $(function(){
 	},function(){
 		$(this).find(".hover-effect").css("display","none");
 	});
+	$('.carousel').slick({
+		accessibility: true,
+		arrows: true,
+		autoplay: true,
+	});
 });
