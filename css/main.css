@@ -276,13 +276,40 @@ div{
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 h1{
-    font-family: "MavenProRegular",Helvetica,Arial,sans-serif;
+    font-family: "MavenProRegular";
     font-size: 28px;
     color: #526c82;
     text-transform: uppercase;
     width: 100%;
     text-align: center;
     margin: 0px;
+}
+.nav{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+}
+.nav span{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 30px;
+}
+.nav span a{
+    font-family: "OpenSansSemiBold";
+    color: #555;
+}
+.nav span a:hover{
+    color: #5363db;
+}
+.nav .nav-inner{
+    width: 80%;
+    height: 1px;
+    margin: 5px auto;
+    border-bottom: 1px solid #fff;
+}
+.nav span a:hover + .nav-inner{
+    border-bottom: 1px solid #5363db;
 }
 @media only screen and (max-width: 1400px){
     
