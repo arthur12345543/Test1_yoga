@@ -578,6 +578,47 @@ h1{
     opacity: 1 !important;
     font-size: 34px !important;
 }
+.benefits{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 110px 0px;
+    background: url("./../images/benefits.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-left:auto;
+    margin-right:auto;
+}
+.benefits-wr{
+    display: block;
+    text-align: center;
+    column-count: 4;
+    column-gap: 0px;
+}
+.benefits-wr .item{
+    display: inline-block;
+    text-align: center;
+    width: 285px;
+    margin: 24px 5px;
+}
+.benefits-wr .item img{
+    width: 75px;
+    height: 75px;
+}
+.benefit-title{
+    font-family: "OpenSansBold";
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 24px 0px;
+}
+.benefit-description{
+    font-family: "OpenSansRegular";
+    font-size: 16px;
+    color: #fff;
+}
 
 @media only screen and (max-width: 1400px){
     
@@ -586,7 +627,10 @@ h1{
     
 }
 @media only screen and (max-width: 1200px){
-    
+    .benefits-wr{
+        column-count: 3;
+        column-gap: 0px;
+    }
 }
 @media only screen and (max-width: 1100px){
     
@@ -595,7 +639,10 @@ h1{
     
 }   
 @media only screen and (max-width: 1000px){
-    
+    .benefits-wr{
+        column-count: 2;
+        column-gap: 0px;
+    }
 }
 @media only screen and (max-width: 950px){
     .gallery{
@@ -615,7 +662,10 @@ h1{
     }
 }
 @media only screen and (max-width: 700px){
-    
+    .benefits-wr{
+        column-count: 1;
+        column-gap: 0px;
+    }
 }
 @media only screen and (max-width: 665px){
     
