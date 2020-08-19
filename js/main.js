@@ -1,3 +1,8 @@
+/*
+	Test task
+	for dZENcode front end position
+	arthur952010@gmail.com 
+*/
 $(function(){
 	SmoothScroll({ stepSize: 60 });
 	$('.gallery .img-wr').hover(function(){

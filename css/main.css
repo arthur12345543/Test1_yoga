@@ -766,6 +766,103 @@ h1{
     color: #777;
     margin: 5px 0px 0px 0px;
 }
+.footer-wrap{
+    width: 100%;
+    display:  block;
+    background-color: #5b6ceb;
+    padding: 0px;
+}
+.footer{
+    color: #fff;
+    display: block;
+    width: 80%;
+    background-color: #5b6ceb;
+    padding: 110px 0px;
+    margin: 0px auto;
+}
+.footer-left{
+    text-align: left;
+    width: 50%;
+    display: inline-block;
+}
+.footer-left .description{
+    width: 470px;
+}
+.footer-left .title, .footer-right .title{
+    font-family: "OpenSansBold"; 
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0px 0px 58px 0px;
+}
+.footer-left .socials{
+    display: block;
+    margin: 58px 0px 0px 0px;
+}
+.footer-left .socials span{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 5px;
+}
+.footer-right{
+    text-align: left;
+    width: 49%;
+    display: inline-block;
+}
+.footer-right .contact-item{
+    display: inline-block;
+    width: 190px;
+    margin: 0px 20px 20px 20px;
+    position: relative;
+}
+.footer-right  .contact-item.address:before{
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -35px;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url("./../images/icon-contacts-address.png") no-repeat;
+}
+.footer-right  .contact-item.mail:before{
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -35px;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url("./../images/icon-contacts-mail.png") no-repeat;
+}
+.footer-right  .contact-item.phone:before{
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -35px;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url("./../images/icon-contacts-phone.png") no-repeat;
+}
+.footer-right  .contact-item.url:before{
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -35px;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url("./../images/icon-contacts-url.png") no-repeat;
+}
+.copyright{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #b7bffc;
+    padding: 42px 0px;
+    background-color: #5363d8;
+}
 
 @media only screen and (max-width: 1400px){
     
