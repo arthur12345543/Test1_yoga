@@ -106,6 +106,7 @@ html,body{ margin: 0; padding: 0; }
 h1,p{ margin: 0; }
 html{
     overflow-x: auto;
+    scroll-behavior: smooth;
 }
 body{
     font-family: "OpenSansRegular";
@@ -647,6 +648,11 @@ h1{
     padding: 9px 23px;
     margin: 45px 0px;
     background-color: #5b6ceb;
+    border: none;
+}
+.plan-items .content button:hover{
+    background-color: #475bf1;
+    box-shadow: 0px 5px 20px 0px rgb(91 108 235);
 }
 .plan-items .content button:hover{
     background-color: #475bf1;
