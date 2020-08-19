@@ -247,48 +247,6 @@ div{
     color: #888 !important;
     text-shadow: none !important;
 }
-.error{
-    font-family: 'OpenSansRegular';
-    padding: 20px;
-    border-radius: 8px;
-    background: #ff6535;
-    border: solid 1px #333;
-    color: #333;
-    font-size: 26px;
-    z-index: 1;
-    min-width: 350px;
-    text-align: center;
-    z-index: 50;
-    font-weight: bolder;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-}
-.success{
-    font-family: 'OpenSansRegular';
-    padding: 20px;
-    border-radius: 8px;
-    background: #5faa43;
-    border: solid 1px #333;
-    color: #333;
-    font-size: 26px;
-    z-index: 1;
-    min-width: 350px;
-    text-align: center;
-    z-index: 50;
-    font-weight: bolder;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-}
 h1{
     font-family: 'OpenSansRegular';
     font-size: 28px;
@@ -618,6 +576,195 @@ h1{
     font-family: "OpenSansRegular";
     font-size: 16px;
     color: #fff;
+}
+.plans{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 110px 0px;
+    background-image: url("./../images/lotus-bg.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+.plan-items{
+    display: block;
+    text-align: center;
+}
+.plan-items .item{
+    display: inline-block;
+    width: 370px;
+    margin: 18px 15px;
+}
+.plan-items .title{
+    background-color: #5b6ceb;
+    color: #fff;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    padding: 40px 0px;
+}
+.plan-items .title div{
+    font-family: "OpenSansBold";
+    display: inline-block;
+    vertical-align: middle;
+}
+.plan-items .title .symbol{
+    font-size: 32px;
+}
+.plan-items .title .price{
+    font-size: 67px;
+    margin: 0px 7px;
+}
+.plan-items .title .terms{
+    font-size: 18px;
+    vertical-align: bottom;
+    position: relative;
+    top: -15px;
+}
+.plan-items .content{
+    font-family: "OpenSansRegular";
+    background-color: #fff;
+    color: #555;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    padding: 45px 0px 0px 0px;
+    box-shadow: 0px 9px 50px 0px rgba(0, 0, 0, 0.1);
+}
+.plan-items .content .inner{
+    width: 20%;
+    height: 1px;
+    margin: 12px auto;
+    border-bottom: 1px solid #d7d7d7;
+}
+.plan-items .content .conditions{
+    margin: 0px;
+}
+.plan-items .content button{
+    font-family: "OpenSansSemiBold"; 
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 9px 23px;
+    margin: 45px 0px;
+    background-color: #5b6ceb;
+}
+.plan-items .content button:hover{
+    background-color: #475bf1;
+}
+.testimonials{
+    display: block;
+    text-align: left;
+    margin: 100px 0px 0px 0px;
+}
+.main-testimonial{
+    width: 1054px;
+    margin: 0px auto;
+    box-shadow: 0px 9px 50px 0px rgba(0, 0, 0, 0.1);
+}
+.main-testimonial .slick-prev{
+    left: -18px;
+    z-index: 40;
+}
+.main-testimonial .slick-next{
+    right: -6px;
+    z-index: 40;
+}
+.testimonial-item{
+    vertical-align: middle;
+    display: block;
+    padding: 25px 62px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.testimonial-item .profile-pic{
+    display: inline-block;
+}
+.testimonial-item .testimonial-feedback{
+    display: inline-block;
+}
+.testimonial-feedback .testimonial-text{
+    position: relative;
+    left: 40px;
+    font-family: "OpenSansItalic"; 
+    font-size: 14px;
+    width: 645px;
+    color: #555;
+}
+.testimonial-feedback .testimonial-text:before{
+    content: "“";
+    display: block;
+    color: #5b6ceb;
+    font-size: 60px;
+    position: absolute;
+    top: -18px;
+    left: -40px;
+}
+.testimonial-feedback .testimonial-text:after{
+    content: "”";
+    display: block;
+    color: #5b6ceb;
+    font-size: 60px;
+    position: absolute;
+    top: 28px;
+    right: -40px;
+}
+.testimonial-feedback .trainer:before{
+    content: "|";
+    display: block;
+    color: #d7d7d7;
+    font-size: 77px;
+    position: absolute;
+    top: -71px;
+    left: -47px;
+}
+.testimonial-feedback .trainer{
+    display: block;
+    position: relative;
+    left: 40px;
+    margin: 40px 0px 0px 0px;
+}
+.testimonial-feedback .trainer .nm{
+    font-weight: 14px;
+    color: #777;
+}
+.testimonial-feedback .trainer .name{
+    font-family: "OpenSansBold"; 
+    font-weight: 16px;
+    color: #5b6ceb;
+    margin: 5px 0px 0px 0px;
+}
+.subtestimonial-wrap{
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+.subtestimonial{
+    display: inline-block;
+    vertical-align: middle;
+}
+.subtestimonial .item{
+    display: flex;
+    align-items: center;
+}
+.info{
+    display: inline-block;
+    position: relative;
+    left: 10px;
+}
+.subtestimonial .item .profile-pic{
+    display: inline-block;
+}
+.subtestimonial .item .name{
+    font-family: "OpenSansBold"; 
+    font-size: 14px;
+    color: #555;
+}
+.subtestimonial .item .status{
+    display: block;
+    font-weight: 12px;
+    color: #777;
+    margin: 5px 0px 0px 0px;
 }
 
 @media only screen and (max-width: 1400px){
