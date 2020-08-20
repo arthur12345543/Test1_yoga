@@ -133,6 +133,12 @@ select{
     -webkit-appearance: none;
     appearance: auto;
 }
+input:invalid{
+    border-color: solid 1px red !important;
+}
+input.invalid{
+    border-color: solid 1px red !important;
+}
 a{
     color: #606975;
     text-decoration: none;
@@ -262,6 +268,8 @@ h1{
     width: 100%;
     text-align: center;
     padding: 15px 0px;
+    z-index: 9999;
+    background-color: #fff;
 }
 .nav span{
     display: inline-block;
@@ -869,6 +877,25 @@ h1{
     padding: 42px 0px;
     background-color: #5363d8;
 }
+.nav-mobile{
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background-color: #5b6ceb;
+    border-radius: 8px;
+    cursor: pointer;
+    line-height: 9px;
+    padding: 12px;
+    z-index: 99999;
+    box-shadow: 0px 9px 50px 0px rgba(0, 0, 0, 0.1);
+}
+.nav-mobile div{
+    display: block;
+    width: 18px;
+    margin: 4px auto;
+    border: solid 1px #fff;
+}
 
 @media only screen and (max-width: 1400px){
     
@@ -881,9 +908,25 @@ h1{
         column-count: 3;
         column-gap: 0px;
     }
+    .footer-left .description{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 1122px){
+    .about .left-section .about-wrapper{
+        width: 90%;
+    }
+    .main-testimonial{
+        width: 80%;
+    }
+    .about .left-section{
+        width: 80%;
+    }
 }
 @media only screen and (max-width: 1100px){
-    
+    .testimonial-feedback .testimonial-text{
+        width: 75%;
+    }
 }
 @media only screen and (max-width: 1050px){
     
@@ -893,6 +936,10 @@ h1{
         column-count: 2;
         column-gap: 0px;
     }
+    .about .right-section{
+        width: 100%;
+        margin: 50px 0px;
+    }
 }
 @media only screen and (max-width: 950px){
     .gallery{
@@ -900,9 +947,38 @@ h1{
         -webkit-column-count: 3;
         column-count:         3;
     }
+    .trial .left-section{
+        float: left;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .trial-form{
+        float: none;
+        margin-right: 0px;
+        margin: 50px auto;
+    }
+    .trial .right-section{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 860px){
+    .nav{
+        display: none;
+    }
+    .nav-mobile{
+        display: block;
+    }
 }
 @media only screen and (max-width: 850px){
-    
+    .logo{
+        display: block;
+        width: 100%;
+        margin: 20px 0px !important;
+    }
 }
 @media only screen and (max-width: 800px){
     .gallery{
@@ -916,9 +992,47 @@ h1{
         column-count: 1;
         column-gap: 0px;
     }
+    .about .right-section .carousel{
+        width: 80%;
+    }
+    .footer-left{
+        text-align: left;
+        width: 100%;
+        display: block;
+        margin: 50px 0px;
+    }
+    .footer-right{
+        text-align: left;
+        width: 100%;
+        display: block;
+    }
+    .footer-right .contact-item{
+        display: inline-block;
+        width: 60%;
+        margin: 20px 44px 20px 20px;
+        position: relative;
+    }
 }
 @media only screen and (max-width: 665px){
-    
+    .yoga-pragrams .item .left-item{
+        display: block;
+        width: 100%;
+    }
+    .yoga-pragrams .item .right-item{
+        display: block;
+        width: 100%;
+        float: none;
+    }
+    .yoga-pragrams .item .right-item .title-program{
+        text-align: center;
+    }
+    .yoga-pragrams .item{
+        width: 70%;
+        padding: 0px 0px 30px 0px;
+    }
+    .yoga-pragrams .item .left-item img{
+        margin: 0px 0px 30px 0px;
+    }
 }
 @media only screen and (max-width: 500px){
     .gallery{
@@ -926,9 +1040,17 @@ h1{
         -webkit-column-count: 1;
         column-count:         1;
     }
+    .trial .trial-motivation{
+        font-size: 35px;
+    }
 }
 @media only screen and (max-width: 499px){
-    
+    .plan-items .item{
+        width: 80%;
+    }
+    .testimonials{
+        display: none;
+    }
 }
 @media only screen and (max-width: 301px){
     

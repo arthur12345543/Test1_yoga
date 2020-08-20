@@ -68,4 +68,21 @@ $(function(){
 	    event.preventDefault();
 	    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
 	});
+	window.onscroll = changePos;
+
+	function changePos() {
+	    var header = document.getElementById("nav");
+	    if(window.pageYOffset > 110){
+	        header.style.position = "fixed";
+	        header.style.top = "0";
+	        header.style.padding = "0px";
+	    }else{
+	        header.style.position = "";
+	        header.style.top = "";
+	        header.style.padding = "15px 0px";
+	    }
+	}
+	$('.nav-mobile').click(function(){
+		$('.nav').slideToggle("fast");
+    });
 });
